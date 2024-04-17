@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.1">
+	<persistence-unit name="my_persistence_unit">
+	   <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	    <class>main.Ansatt</class>
+	    <properties>
+	        <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+	        <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://129.151.221.119:5432/DAT107"/>
+	        <property name="jakarta.persistence.jdbc.user" value="669798"/>
+	        <property name="jakarta.persistence.jdbc.password" value="Karbonadedeig_1"/>
+	        
+	        <property name="eclipselink.default-schema" value="oblig3"/>
+	        <property name="eclipselink.logging.level" value="FINE"/>
+	        <property name="eclipselink.ddl-generation" value="create-tables"/>
+	    </properties>
+	</persistence-unit>
+
+</persistence>
